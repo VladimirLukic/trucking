@@ -19,6 +19,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
+Auth::routes(['register' => false]); //iskljucio sam rutu ka registraciji
+
 Route::get('/home', 'HomeController@index')->name('home');
 
-Auth::routes();
